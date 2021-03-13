@@ -28,4 +28,12 @@
         <servlet-name>ShowManager</servlet-name>
         <url-pattern>/servlet/ShowManager</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Delete</servlet-name>
+        <servlet-class>servlet.Delete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Delete</servlet-name>
+        <url-pattern>/servlet/Delete</url-pattern>
+    </servlet-mapping>
 </web-app>

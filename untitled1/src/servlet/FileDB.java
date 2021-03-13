@@ -48,7 +48,7 @@ try {
     smartFile.saveAs("/pictures/"+smartFile.getFileName(),smartUpload.SAVE_VIRTUAL);
 //    count++;
 //    out.println(smartFile.getFileName());
-String urlForPictures="http://192.168.1.4:8080/untitled1_war/pictures/"+smartFile.getFileName();
+String urlForPictures="http://192.168.43.146:8080/untitled1_war/pictures/"+smartFile.getFileName();
 
 
     Class.forName("com.mysql.cj.jdbc.Driver");
