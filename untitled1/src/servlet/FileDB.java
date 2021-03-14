@@ -50,18 +50,32 @@ try {
      */
     String owner=req.getParameter("owner");
     File smartFile=smartUpload.getFiles().getFile(0);
-    smartFile.saveAs("/pictures/"+smartFile.getFileName(),smartUpload.SAVE_VIRTUAL);
-String urlForPictures="http://192.168.43.146:8080/untitled1_war/pictures/"+smartFile.getFileName();
-    Class.forName("com.mysql.cj.jdbc.Driver");
-    String url = "jdbc:mysql://127.0.0.1:3306/depstore?serverTimezone=UTC";
-    con = DriverManager.getConnection(url, "root", "ti163799");
-    st = con.createStatement();
-    sql = "insert into thing values(\'i\',\'"+smartFile.getFileName()+"\',\'"+urlForPictures+"\',\'"+previous+"\',\'"+owner+"\',\'"+time+"\');";                                   ;
-    st.executeUpdate(sql);
+String fileName=smartFile.getFileName();
+String formatName=fileName.substring(fileName.length()-4,fileName.length());
+
+    if(formatName.equals(".jpg")||formatName.equals(".png")||formatName.equals(".gif")||formatName.equals(".jpg")||formatName.equals(".bmp")){
+        //检查格式
+
+        smartFile.saveAs("/pictures/"+smartFile.getFileName(),smartUpload.SAVE_VIRTUAL);
+        String urlForPictures="http://192.168.43.146:8080/untitled1_war/pictures/"+smartFile.getFileName();
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        String url = "jdbc:mysql://127.0.0.1:3306/depstore?serverTimezone=UTC";
+        con = DriverManager.getConnection(url, "root", "ti163799");
+        st = con.createStatement();
+        sql = "insert into thing values(\'i\',\'"+smartFile.getFileName()+"\',\'"+urlForPictures+"\',\'"+previous+"\',\'"+owner+"\',\'"+time+"\');";                                   ;
+        st.executeUpdate(sql);
+        out.println("{\"status\":\"success\"}");
+    }else{
+        out.println("{\"status\":\"Format_mismatch\"}");//给安卓端返回JSON：{"status":"Format_mismatch"}，表示格式不支持
+
+    }
+
+
+
+
 
 }catch (Exception e){
-
-    out.println(e.getMessage());
+    out.print(e.getMessage());
 }
 
     }
