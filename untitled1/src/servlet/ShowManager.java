@@ -55,9 +55,6 @@ public class ShowManager extends HttpServlet {
             } else {      //查询时，安卓传来的type值是"_"（短下划线）,如果上传图片，由FileDB处理
                 sql = "select * from thing where owner=\'" + owner + "\' and previous=\'" + previous + "\';";
                 res = st.executeQuery(sql);
-
-
-
                     String output = "[";
                     while (res.next()) {
                         output += "{\"stuff_name\":\"";

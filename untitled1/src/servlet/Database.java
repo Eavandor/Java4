@@ -1,6 +1,4 @@
 package servlet;
-
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,10 +7,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
-
 @WebServlet(name = "Database")
 public class Database extends HttpServlet {
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("gb2312");
         response.setContentType("text/html;charset=gb2312");

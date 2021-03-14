@@ -7,10 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87d2aa65-064b-4274-ae7b-65d6f2a6565e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/servlet/Delete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/servlet/Delete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/servlet/FileDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/servlet/FileDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/servlet/ShowManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/servlet/ShowManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled1/servlet/Delete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled1/servlet/Delete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled1/servlet/FileDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled1/servlet/FileDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled1/servlet/ShowManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled1/servlet/ShowManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/Delete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlet/FileDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/FileDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlet/ShowManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/ShowManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../接口文档.doc" beforeDir="false" afterPath="$PROJECT_DIR$/../接口文档.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~$接口文档.doc" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/ShowManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-507">
-              <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="348">
+              <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,17 +73,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/Delete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+            <state relative-caret-position="19">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/servlet/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="570">
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/FileDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+            <state relative-caret-position="342">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,11 +136,11 @@
         <option value="$PROJECT_DIR$/web/ind2.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/Servlet9.java" />
         <option value="$PROJECT_DIR$/src/servlet/ShowManager2.java" />
-        <option value="$PROJECT_DIR$/src/servlet/Database.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/servlet/Delete.java" />
         <option value="$PROJECT_DIR$/src/servlet/FileDB.java" />
         <option value="$PROJECT_DIR$/src/servlet/ShowManager.java" />
+        <option value="$PROJECT_DIR$/src/servlet/Delete.java" />
+        <option value="$PROJECT_DIR$/src/servlet/Database.java" />
       </list>
     </option>
   </component>
@@ -157,8 +171,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,22 +194,12 @@
               <item name="untitled1" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="untitled1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled1" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="drawables" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled1" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,13 +215,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\WIN10\IdeaProjects\untitled1\web" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\WIN10\IdeaProjects\untitled1\web" />
       <recent name="C:\Users\WIN10\IdeaProjects\untitled1\src" />
       <recent name="C:\Users\WIN10\IdeaProjects\untitled1\web\WEB-INF\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\WIN10\IdeaProjects\untitled1\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -644,11 +646,16 @@
       <workItem from="1615616980681" duration="108000" />
       <workItem from="1615617244251" duration="492000" />
       <workItem from="1615694428204" duration="187000" />
+      <workItem from="1615694911863" duration="41000" />
+      <workItem from="1615702896308" duration="3134000" />
+      <workItem from="1615707262105" duration="768000" />
+      <workItem from="1615713081499" duration="2330000" />
+      <workItem from="1615715486740" duration="362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119321000" />
+    <option name="totallyTimeSpent" value="125956000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -663,7 +670,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.87234044" visible="true" weight="0.2549168" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.87234044" visible="true" weight="0.27382752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -800,24 +807,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/Delete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/FileDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        <state relative-caret-position="342">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -826,8 +819,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/ShowManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-507">
-          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        <state relative-caret-position="348">
+          <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/Delete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -25,6 +25,7 @@ public class FileDB extends HttpServlet {
 
     static int count=0;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         request.setCharacterEncoding("gb2312");
         response.setContentType("text/html;charset=gb2312");
         PrintWriter out=response.getWriter();
@@ -51,8 +52,6 @@ try {
     File smartFile=smartUpload.getFiles().getFile(0);
     smartFile.saveAs("/pictures/"+smartFile.getFileName(),smartUpload.SAVE_VIRTUAL);
 String urlForPictures="http://192.168.43.146:8080/untitled1_war/pictures/"+smartFile.getFileName();
-
-
     Class.forName("com.mysql.cj.jdbc.Driver");
     String url = "jdbc:mysql://127.0.0.1:3306/depstore?serverTimezone=UTC";
     con = DriverManager.getConnection(url, "root", "ti163799");

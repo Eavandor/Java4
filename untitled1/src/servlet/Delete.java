@@ -11,7 +11,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
+import java.io.File;
 @WebServlet(name = "Delete")
 public class Delete extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -23,6 +23,7 @@ public class Delete extends HttpServlet {
         response.setContentType("text/html;charset=gb2312");
         PrintWriter out = response.getWriter();
         String n = request.getParameter("owner");
+        String pictureName = request.getParameter("picName");
         Statement st = null;
         Connection con = null;
         String sql = "";
@@ -31,14 +32,25 @@ public class Delete extends HttpServlet {
             String url = "jdbc:mysql://127.0.0.1:3306/depstore?serverTimezone=UTC";
             con = DriverManager.getConnection(url, "root", "ti163799");
             st = con.createStatement();
-            sql= "delete from student where name=\'"+n+"\';";
+            sql= "delete from thing where owner=\'"+n+"\' and name=\'"+pictureName+"\';";
             st.executeUpdate(sql);
-            sql= "delete from thing where owner=\'"+n+"\';";
-            st.executeUpdate(sql);
-            out.println("{\"status\":\"success\"}");
+            String filePath="D:\\apache-tomcat-9.0.41\\webapps\\untitled1_war\\pictures\\"+pictureName;
+            File f1=new File(filePath);
+            if(f1.exists()&&f1.isFile()) {
+                if(f1.delete()) {       //删除服务器文件夹下对应的文件
+                    out.println("{\"status\":\"success\"}");
+                }else {
+                    out.println("{\"status\":\"fail\"}");
+                }
+
+            }else {
+                out.println("{\"status\":\"fail\"}");
+            }
+
             st.close();
             con.close();
         }catch (Exception e){
+
             out.println("{\"status\":\""+e.getMessage()+"\"}");
         }
         out.close();
