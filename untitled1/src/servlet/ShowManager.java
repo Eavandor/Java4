@@ -59,7 +59,7 @@ public class ShowManager extends HttpServlet {
                     while (res.next()) {
                         output += "{\"stuff_name\":\"";
                         output += (res.getString(2) + "\",\"type\":\"");
-                        output += (res.getString(1) + "\",\"url\":\"");
+                        output += (res.getString(1) + "\",\"url\":\"");   //将url返回给安卓，安卓直接通过url实现下载功能
                         output += (res.getString(3) + "\"},");
                     }
                     output = output.substring(0, output.length() - 1);
