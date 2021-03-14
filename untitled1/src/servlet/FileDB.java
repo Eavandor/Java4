@@ -42,12 +42,14 @@ try {
     smartUpload.upload();
     Request req=smartUpload.getRequest();
     String previous=req.getParameter("previous");
+    /*                               previous指的是当前所在的文件夹
+    （注：由于安卓端，已经限制用户名以及文件夹名都是唯一值，因此不需要一个绝对路径和相对路径，
+    直接按照当前文件夹的名字+用户名，就可以在数据库中得到该文件夹下一级有哪些文件（或文件夹），
+    而此处的previous就是指明了当前目录，在安卓端对于一个用户来说，是唯一值，可以准确得到文件夹下的东西）
+     */
     String owner=req.getParameter("owner");
-//    out.println(msg0);
     File smartFile=smartUpload.getFiles().getFile(0);
     smartFile.saveAs("/pictures/"+smartFile.getFileName(),smartUpload.SAVE_VIRTUAL);
-//    count++;
-//    out.println(smartFile.getFileName());
 String urlForPictures="http://192.168.43.146:8080/untitled1_war/pictures/"+smartFile.getFileName();
 
 
